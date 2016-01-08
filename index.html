@@ -1,0 +1,128 @@
+<!--Devloped by sagar bhatt-->
+<!DOCTYPE html>
+
+<html lang="en" ng-app="urDoc">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" src="css/style.css">
+    <link rel="stylesheet" type="text/css" src="css/style1.css">
+ 
+
+ <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+     
+    <script type="text/javascript" src='http://maps.google.com/maps/api/js?sensor=false&libraries=places'></script>
+
+	
+    
+        
+    <title></title>
+    <style>
+        @media (max-width: 767px) {
+            .form-horizontal{
+                width:90%;
+            }
+            .navbar-fixed-top {
+                position: relative;
+                top: auto;
+            }
+            .navbar-fixed-bottom{
+                position: relative;
+                bottom: auto;
+            }
+            .navbar-collapse {
+                max-height: none;
+            }
+            body {
+                margin: 0;
+                background-color: lightgray;
+            }
+
+        }
+            body {
+                margin: 0;
+                background-color: lightgray;
+            }
+    body{
+        background-image: url("./images/back.jpg");
+        background-size:cover ;
+
+    }
+    @media screen and (min-width: 768px) {
+	
+	#updateApp .modal-dialog  {width:900px;}
+
+}
+        #updateApp .modal-dialog  {width:75%;}
+
+
+    </style>
+
+
+</head>
+
+
+<body>
+
+<div class="container-fluid ">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#/">Your Doc!!</a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#/">Home</a></li>
+                    <li><a href="#/contact_us">Contact us</a></li>
+                    <li><a href="#">Join us</a></li>
+                    <li><a href="#/about_us">About us</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#/registration"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+        
+    <div ng-view >
+    
+    </div>
+    &nbsp;
+        
+    <script src="/js/angular.js"></script>
+    <script src="/js/angular-route.js"></script>
+    <script src="/app/app.js"></script>
+    <script src="/app/service/doctor_name.js"></script>
+    <script src="/app/service/speciality.js"></script>
+    <script src="/app/controller/search.js"></script>
+    <script src="/app/controller/createUser.js"></script>
+    <script src="/app/controller/login.js"></script>
+   <script src="/app/controller/content.js"></script>
+
+    <script src="/app/controller/doctorPanel.js"></script>
+    
+    <nav class="navbar navbar-inverse navbar-fixed-bottom" >
+        <div class="container-fluid">
+            <div class="navbar-header">
+
+                <a href="#" class="navbar-brand">
+                    <span class="glyphicon glyphicon-copyright-mark">2014-15 By SagarBhatt & Ashutosh</span>
+                </a>
+                </p>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+
+    </div>
+
+
+</body>
+</html>

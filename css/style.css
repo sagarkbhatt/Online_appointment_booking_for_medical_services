@@ -1,0 +1,25 @@
+
+<!--Devloped by Sagar Bhatt -->
+body{
+    background-color:lightgray ;
+    
+
+}
+div.form-horizontal{
+    padding: 10px;
+    background-color:rgba(224, 228, 199, 0.98);
+    max-width: 1024px;
+    max-height: 1048px;
+}
+.container-fluid{
+    background-color:lightgray ;
+    height: 100%;
+
+}
+.form-horizontal{
+    background-color: white;
+    margin-bottom:5%;
+}
+.form-horizontal .control-label{
+    text-align:left !important;
+}

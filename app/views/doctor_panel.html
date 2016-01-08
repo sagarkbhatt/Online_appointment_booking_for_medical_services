@@ -1,0 +1,58 @@
+<script src="js/jquery-1.11.3.min.js"></script>
+    <script src="/dist/locationpicker.jquery.min.js"></script>
+<div class="container" style="min-width:200px;padding:10px;background-color:white;width: 40% ;margin-left: auto;margin-right: auto;margin-top:10%;margin-bottom: 5%;">    
+ <div id="messages"class="well" data-ng-show="msg">{{ msg }}</div>
+
+    <a href="" class="btn btn-primary" style="width:100%;" data-ng-click="changePath();">Settings</a>
+
+
+ 
+
+   
+  
+      <form role="form"  method="post" data-ng-submit="submitMe()">
+    
+        <table class="table">
+        <caption>Enter information that will be shown to client</caption>
+            
+            <tr>
+            <td colspan="2">
+            <center><b>{{ user }}</b></center><br/>
+ 
+                <center><img name="imgProfile" data-ng-src="" class="img-rounded img-responsive" data-ng-hide="true" data-ng-model="profileImage" width="30%" height="30%" alt="Profile pic"></center>
+                
+                </td>
+            </tr>
+            <tr>
+            <td>
+            <label for="specialist" >Select speciality</label>     
+                </td>
+            <td>
+            <select name="specialist" class="form-control"  data-ng-model="spec" >
+                    
+                <OPTION data-ng-repeat="x in speciality"  value="{{ x }}">{{ x }}</OPTION>
+            </select>   
+            </td>
+            </tr>
+            
+            <tr>
+            <td>
+            <label for="txtdetails">Summary(max 100 words)</label>    
+            </td>
+            <td>
+                <textarea rows="10" name="txtDetails" placeholder="Enter your details" data-ng-model="txtDetail" class="form-control" required> </textarea>   
+            </td>
+            
+            </tr>
+            <tr>
+            <td colspan="2">
+                <input type="submit" class="btn btn-primary form-control" value="Save" />
+                </td>
+            </tr>
+        </table>
+    
+    </form>
+            
+    
+</div>
+        
